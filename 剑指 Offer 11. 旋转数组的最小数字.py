@@ -12,6 +12,3 @@ class Solution:
             else:
                 left += 1
         return numbers[left]
-
-s = Solution()
-s.minArray([10,1,10,10,10])

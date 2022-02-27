@@ -4,7 +4,7 @@ class Solution1:
 
 class Solution2:
     def reverseLeftWords(self, s: str, n: int) -> str:
-        res = "" # 字符串：不可变类型，效率低，每次都要新建
+        res = ""
         for i in range(n,len(s)):
             res += s[i]
         for i in range(n):
@@ -13,7 +13,7 @@ class Solution2:
 
 class Solution3:
     def reverseLeftWords(self, s: str, n: int) -> str:
-        res = [] # 列表：可变类型
+        res = []
         for i in range(n,len(s)):
             res.append(s[i])
         for i in range(n):
