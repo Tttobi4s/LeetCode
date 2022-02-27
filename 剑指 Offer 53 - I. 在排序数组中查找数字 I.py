@@ -18,7 +18,7 @@ class Solution2:
             return 0
         left, right = 0, len(nums) - 1
         while left < right:
-            mid = int((left + right) / 2)
+            mid = (left + right) // 2
             if nums[mid] > target - 1:
                 right = mid
             else:
@@ -26,7 +26,7 @@ class Solution2:
         L = left
         left, right = 0, len(nums) - 1
         while left < right:
-            mid = int((left + right) / 2)
+            mid = (left + right) // 2
             if nums[mid] > target:
                 right = mid
             else:
@@ -34,7 +34,3 @@ class Solution2:
         if nums[left] == target:
             left += 1
         return left - L
-
-
-s = Solution2()
-s.search([5, 7, 7, 8, 8, 10],8)
