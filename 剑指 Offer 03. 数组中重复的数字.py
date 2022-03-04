@@ -21,4 +21,3 @@ class Solution2:
                     nums[nums[i]] = nums[i]
                     nums[i] = tmp
         return -1
-
