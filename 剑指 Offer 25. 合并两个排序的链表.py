@@ -20,10 +20,3 @@ class Solution:
         if l2:
             r.next = l2
         return head.next
-
-l1 = ListNode(1)
-l2 = ListNode(1)
-l1.next = ListNode(2)
-l2.next = ListNode(2)
-s = Solution()
-s.mergeTwoLists(l1,l2)
