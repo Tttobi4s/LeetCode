@@ -19,6 +19,3 @@ class Solution:
                 if dfs(i, j, 0):
                     return True
         return False
-
-s = Solution()
-s.exist([["A", "B", "C", "E"], ["S", "F", "C", "S"], ["A", "D", "E", "E"]],"ABCCED")
