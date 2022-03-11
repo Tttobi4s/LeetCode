@@ -16,7 +16,7 @@ class Solution1:
                 while root.left is not None:
                     root = root.left
                 root.left = pre
-            if pre.val > root.val:
+            elif pre.val > root.val:
                 while root.right is not None:
                     root = root.right
                 root.right = pre
